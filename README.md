@@ -93,5 +93,5 @@ docker push localhost:5001/xonotic-gameserver:latest
 Now that have a functioning single gameserver, how do we create more? Easy, just scale up the fleet:
 
 ```shell
-minikube -p gs-cluster kubectl -- -n gameservers scale fleet local-fleet --replicas=1
+minikube -p gs-cluster kubectl -- -n gameservers scale fleet local-fleet --replicas=2
 ```
